@@ -1,0 +1,44 @@
+[
+    {
+        "img":"./resources/imagenes/caba/caba.jpg",
+        "title": "CABA",
+        "description":"Capital de Argentina. Su centro es la Plaza de Mayo, rodeada de imponentes edificios del Siglo XIX.",
+        "link": "./pages/caba.html"
+    },
+    {
+        "img":"./resources/imagenes/cordoba/cordoba.jpg",
+        "title": "Córdoba",
+        "description":"Ubicada en medio de las praderas de las pampas.Conocida por su arquitectura colonial española y por sus sierras.",
+        "link": "./pages/cordoba.html"
+    },
+    {
+        "img":"./resources/imagenes/salta/salta.jpg",
+        "title": "Salta",
+        "description":"Conocida por su arquitectura colonial española y su herencia andina.",
+        "link": "./pages/salta.html"
+    },
+    {
+        "img":"./resources/imagenes/jujuy/jujuy.jpg",
+        "title": "Jujuy",
+        "description":"Caracteriza por sus espectaculares formaciones rocosas y colinas de la Quebrada de Huamahuaca.",
+        "link": "./pages/jujuy.html"
+    },
+    {
+        "img":"./resources/imagenes/neuquen/neuquen.jpg",
+        "title": "Neuquen",
+        "description":"Se caracteriza por tener paisajes : la Cordillera de Los Andes (altas cumbres) y la meseta.",
+        "link": "./pages/neuquen.html"
+    },
+    {
+        "img":"./resources/imagenes/Tierra-del-fuego/Tierra-del-fuego.jpg",
+        "title": "CABA",
+        "description":"Se destaca por tener la unica reserva natural del país que posee costa.",
+        "link": "./pages/Tierra-del-fuego.html"
+    },
+    {
+        "img":"./resources/imagenes/mendoza/mendoza.jpg",
+        "title": "Mendoza",
+        "description":"Tiene unos vinos re zarpados y el profe es un capo",
+        "link": "./pages/mendoza.html"
+    }
+]
