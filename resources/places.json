@@ -31,7 +31,7 @@
     },
     {
         "img":"./resources/imagenes/Tierra-del-fuego/Tierra-del-fuego.jpg",
-        "title": "CABA",
+        "title": "Tierra del fuego",
         "description":"Se destaca por tener la unica reserva natural del país que posee costa.",
         "link": "./pages/Tierra-del-fuego.html"
     },
