@@ -23,7 +23,13 @@
                     <a class="nav-link" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../pages/registro.html">Registro</a>
+                    <a class="nav-link" href="./login.html" id="login_registro">Login & Registro</a>
+
+                    <a class="nav-link" href="#" id="mi_perfil">Mi perfil</a>
+
+                </li>
+                <li class="nav-item">
+                    <button id="log_out" type="button">Cerrar Sesión</button>
                 </li>
             </ul>
         </div>
@@ -115,50 +121,121 @@
 
     <hr size="1px" width="100%" align="center" color="bg-light" />
     
-    <section data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="2000" class="Titulo">
-        <div class="carrucel">
-            <div class="provincia">
-                <a href="./caba.html"><img class="foto box-2" src="../resources/imagenes/caba/caba.jpg"
-                        alt="" loading="lazy">
-                    <p><em><small>CABA</small></em></p>
-                </a>
+    <!-- Carrusel -->
+  <section>
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
+            </ol>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="../resources/imagenes/caba/caba.jpg" class="img-fluid" alt="caba">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>CABA</h4>
+                        <a href="./caba.html" class="btn btn-primary">Ver más<i class="fa fa-angle-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="../resources/imagenes/cordoba/cordoba.jpg" class="img-fluid" alt="cordoba">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Córdoba</h4>
+                        <a href="./cordoba.html" class="btn btn-primary">Ver más <i class="fa fa-angle-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="../resources/imagenes/salta/salta.jpg" class="img-fluid" alt="salta">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Salta</h4>
+                        <a href="./salta.html" class="btn btn-primary">Ver más <i class="fa fa-angle-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="../resources/imagenes/jujuy/jujuy.jpg" class="img-fluid" alt="jujuy">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Jujuy</h4>
+                        <a href="./jujuy.html" class="btn btn-primary">Ver más <i class="fa fa-angle-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="../resources/imagenes/neuquen/neuquen.jpg" class="img-fluid" alt="neuquen">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Neuquen</h4>
+                        <a href="./neuquen.html" class="btn btn-primary">Ver más <i class="fa fa-angle-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="../resources/imagenes/Tierra-del-fuego/Tierra-del-fuego.jpg" class="img-fluid"
+                          alt="tierra del fuego">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Tierra del fuego</h4>
+                        <a href="./Tierra-del-fuego.html" class="btn btn-primary">Ver más <i
+                            class="fa fa-angle-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <div class="img-box">
+                        <img src="../resources/imagenes/mendoza/mendoza.jpg" class="img-fluid" alt="mendoza">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>Mendoza</h4>
+                        <a href="./mendoza.html" class="btn btn-primary">Ver más <i class="fa fa-angle-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
             </div>
-            <div class="provincia">
-                <a href="./cordoba.html"><img class="foto box-2" src="../resources/imagenes/cordoba/cordoba.jpg"
-                        alt="" loading="lazy">
-                    <p><em><small>Córdoba</small></em></p>
-                </a>
-            </div>
-            <div class="provincia">
-                <a href="./salta.html"><img class="foto box-2" src="../resources/imagenes/salta/salta.jpg"
-                        alt="" loading="lazy">
-                    <p><em><small>Salta</small></em></p>
-                </a>
-            </div>
-            <div class="provincia">
-                <a href="./jujuy.html"><img class="foto box-2" src="../resources/imagenes/jujuy/jujuy.jpg"
-                        alt="" loading="lazy">
-                    <p><em><small>Jujuy</small></em></p>
-                </a>
-            </div>
-            <div class="provincia">
-                <a href="./neuquen.html"><img class="foto box-2" src="../resources/imagenes/neuquen/neuquen.jpg"
-                        alt="" loading="lazy">
-                    <p><em><small>Neuquen</small></em></p>
-                </a>
-            </div>
-            <div class="provincia">
-                <a href="./Tierra-del-fuego.html"><img class="foto box-2"
-                        src="../resources/imagenes/Tierra-del-fuego/Tierra-del-fuego.jpg"
-                        alt="" loading="lazy">
-                    <p><em><small>Tierra del Fuego</small></em></p>
-                </a>
-            </div>
-
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+              <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </div>
         </div>
-
-
-    </section>
+      </div>
+    </div>
+  </section>
 
     <footer class="bg-light text-dark pt-3 pb-4">
         <div class="container text-center">
@@ -166,12 +243,19 @@
                 <div class="text-center mb-2">
                     <p style="display: flex; flex-direction: column; align-items: center;">
                         <span>Copyright Todos los derechos reservados</span>
-                        <a href="../index.html">
+                        <a href="#">
                             <strong class="text-primary">Turisteando siendo Nativx - 2024</strong>
                         </a>
                     </p>
                     <hr style="width: 60%; margin: 15px auto;">
-                    <p><a href="https://github.com/ro-fer">Diseñado por Roh Fernandez</a></p>
+                    <p>Integrantes del proyecto</p>
+                    <div class="membersList">
+                        <p><a href="https://github.com/ro-fer">Rocio Fernandez</a></p>
+                        <p><a href="https://github.com/Feofanes">Nahuel Cesatti Laluce</a></p>
+                        <p><a href="https://github.com/matirnc">Ronco Matias</a></p>
+                        <p><a href="https://github.com/MqttLab">Maldonado Mauricio</a></p>
+                        <p><a href="https://github.com/Lautallarico">Lautaro Tallarico</a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -187,6 +271,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+
+    <script src="../scripts/scripts.js"></script>
 
 </body>
 
