@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./styles/estilos.css" />
 
 </head>
-
 <body>
     <h1 class="display-1 bg-light   animate__animated animate__backInDown" align="center">Turisteando siendo Nativx
     </h1>
@@ -26,7 +25,13 @@
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./pages/registro.html">Registro</a>
+                    <a class="nav-link" href="./pages/login.html" id="login_registro">Login & Registro</a>
+
+                    <a class="nav-link" href="#" id="mi_perfil">Mi perfil</a>
+
+                </li>
+                <li class="nav-item">
+                    <button id="log_out" type="button">Cerrar Sesión</button>
                 </li>
             </ul>
         </div>
@@ -34,83 +39,8 @@
 
     <section style="height: min-content;">
         <div class="container-fluid cardContainer" style="height: min-content;">
-            <div class="row">
-                <div class="col col-12 col-md-6 col-lg-4">
-                    <div class="miCard">
-                        <div class="img-box"><img src="./resources/imagenes/caba/caba.jpg" class="box" alt="..."></div>
-                        <div class="card-body-box">
-                            <h5 class="card-title">CABA</h5>
-                            <p class="card-text">Capital de Argentina. Su centro es la Plaza de Mayo, rodeada de
-                                imponentes edificios del Siglo XIX. </p>
-                            <a href="./pages/caba.html" class="btn btn-primary">CABA</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-lg-4">
-                    <div class="miCard">
-                        <div class="img-box"><img src="./resources/imagenes/cordoba/cordoba.jpg" class="box" alt="...">
-                        </div>
-                        <div class="card-body-box">
-                            <h5 class="card-title">Córdoba</h5>
-                            <p class="card-text">Ubicada en medio de las praderas de las pampas.Conocida por su
-                                arquitectura colonial española y por sus sierras.</p>
-                            <a href="./pages/cordoba.html" class="btn btn-primary">Cordoba</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-lg-4">
-                    <div class="miCard">
-                        <div class="img-box"><img src="./resources/imagenes/salta/salta.jpg" class="box" alt="...">
-                        </div>
-                        <div class="card-body-box">
-                            <h5 class="card-title">Salta</h5>
-                            <p class="card-text">Conocida por su arquitectura colonial española y su herencia
-                                andina.
-                            </p>
-                            <a href="./pages/salta.html" class="btn btn-primary">Salta</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-lg-4">
-                    <div class="miCard">
-                        <div class="img-box"><img src="./resources/imagenes/jujuy/jujuy.jpg" class="box" alt="...">
-                        </div>
-                        <div class="card-body-box">
-                            <h5 class="card-title">Jujuy</h5>
-                            <p class="card-text">Caracteriza por sus espectaculares formaciones rocosas y colinas de
-                                la
-                                Quebrada de Huamahuaca.</p>
-                            <a href="./pages/jujuy.html" class="btn btn-primary">Jujuy</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-lg-4">
-                    <div class="miCard">
-                        <div class="img-box"><img src="./resources/imagenes/neuquen/neuquen.jpg" class="box" alt="...">
-                        </div>
-                        <div class="card-body-box">
-                            <h5 class="card-title">Neuquen</h5>
-                            <p class="card-text">Se caracteriza por tener paisajes : la Cordillera de Los Andes
-                                (altas
-                                cumbres ) y la meseta. </p>
-                            <a href="./pages/neuquen.html" class="btn btn-primary">Neuquen</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-lg-4">
-                    <div class="miCard">
-                        <div class="img-box">
-                            <img src="./resources/imagenes/Tierra-del-fuego/Tierra-del-fuego.jpg" class="box" alt="...">
-                        </div>
-                        <div class="card-body-box">
-                            <h5 class="card-title">Tierra del Fuego </h5>
-                            <p class="card-text">Se destaca por tener la unica reserva natural del país que posee
-                                costa.
-                            </p>
-                            <a href="./pages/Tierra-del-fuego.html" class="btn btn-primary">Tierra del Fuego </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="row" id="cards-home">
+                <!-- Aca se renderizan las cards-home.js -->
             </div>
         </div>
     </section>
@@ -128,7 +58,12 @@
                         </a>
                     </p>
                     <hr style="width: 60%; margin: 15px auto;">
-                    <p><a href="https://github.com/ro-fer">Diseñado por Roh Fernandez</a></p>
+                    <p>Integrantes del proyecto</p>
+                    <p><a href="https://github.com/ro-fer">Rocio Fernandez</a></p>
+                    <p><a href="https://github.com/Feofanes">Nahuel Cesatti Laluce</a></p>
+                    <p><a href="https://github.com/matirnc">Ronco Matias</a></p>
+                    <p><a href="https://github.com/ro-fer">Maldonado Mauricio</a></p>
+                    <p><a href="https://github.com/Lautallarico">Lautaro Tallarico</a></p>
                 </div>
             </div>
         </div>
@@ -144,6 +79,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        
+    <script src="./scripts/scripts.js"></script>
+
+    <!-- JS del login -->
+    <script src="./scripts/script_login.js"></script>
+   
 
 </body>
 

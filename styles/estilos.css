@@ -310,3 +310,8 @@ a {
     /* box-shadow: 0 0px 15px 3px rgba(255, 255, 255, 0.534); */
     /* CAMBIAR COLOR SOMBRA */
 }
+
+
+#mi_perfil, #log_out{
+    display: none;
+}
