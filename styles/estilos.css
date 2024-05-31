@@ -1,43 +1,6 @@
-/* Carrucel */
-.carrucel {
-    overflow-x: scroll;
-    width: 100%;
-    display: flex;
-}
-
-.provincia {
-    border-radius: 25px;
-    width: 170px;
-    min-width: 170px;
-    font-size: 20px;
-    cursor: pointer;
-    margin-left: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.foto {
-    border-radius: 5%;
-    width: 95%;
-    height: 95%;
-    object-fit: cover;
-}
-
-.Titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Fin Carrucel */
-
-/* Cards (ambas) */
+/* Cards (galeria de lugares) */
 /* ----------------------------- */
+
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -97,6 +60,8 @@
 }
 
 /* ------------------------------- */
+/* Cards (pagina inicio) */
+
 .cardContainer {
     padding: 0 10dvw;
 }
@@ -162,24 +127,10 @@
     }
 }
 
-@media (max-width: 576px) {
-    .cardContainer {
-        padding: 0 5dvw;
-    }
-}
 
-@media (max-width: 768px) {
-    .gallery-container {
-        display: flex;
-        flex-direction: column;
 
-        .gallery-item{
-            height: 25dvh;
-        }
-    }
-}
+/* ---- Fin cards ---- */
 
-@media (max-width: 992px) and (min-width: 768px) {}
 
 .box {
     height: 100%;
@@ -187,22 +138,9 @@
     object-fit: cover;
 }
 
-.box-2 {
-    border: 1px solid black;
-    height: 15vw;
-    width: 13vw;
-    max-width: 150px;
-    max-height: 150px;
-}
 
-.box-provincias {
-    border: 1px solid black;
-    height: 30vw;
-    width: 30vw;
-
-}
-
-.seccionRegistrarse {
+/* Formulario Rocio -> Ver que se puede usar */
+/* .seccionRegistrarse {
     width: 100%;
     margin-top: 5%;
     margin-bottom: 0.5rem;
@@ -221,7 +159,7 @@
         margin-bottom: 20px;
     }
 
-    /*seleccionar todos los input menos el checkbox*/
+    -seleccionar todos los input menos el checkbox-
     form {
         width: 90%;
         padding: 100px;
@@ -274,20 +212,9 @@
 
         }
     }
-}
-
-.contenedor-provincia {
-    height: 400px;
-    width: 400px;
-    position: relative;
-}
-
-.imagen-provincia {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
+} */
+/* ---------------- */
+/* Cosas a mover de lugar */
 a {
     outline: none;
     text-decoration: none;
@@ -310,6 +237,21 @@ a {
     /* box-shadow: 0 0px 15px 3px rgba(255, 255, 255, 0.534); */
     /* CAMBIAR COLOR SOMBRA */
 }
+
+
+#mi_perfil, #log_out{
+    display: none;
+}
+
+.membersList{
+    padding: 0 5dvw;
+    display: flex;
+    gap: 20px 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ------------------------ */
 
 /* Carousel */
 .carousel {
@@ -401,3 +343,23 @@ a {
 .carousel-indicators li.active {	
 	background: #555;
 }
+
+
+@media (max-width: 576px) {
+    .cardContainer {
+        padding: 0 5dvw;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        display: flex;
+        flex-direction: column;
+
+        .gallery-item{
+            height: 25dvh;
+        }
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {}

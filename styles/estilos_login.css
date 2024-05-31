@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+
+body{
+
+    background-image: url(../resources/imagenes/fondo.jpg);
+    background-size: cover; /* ajusta el tamano */
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* se adapta la pantalla */
+    
+} 
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.container__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(2px); /* hace un desenfoque */
+    background-color: rgba(0, 128, 255, 0.5);
+    border-radius: 10px;
+}
+
+.caja__trasera div{
+    /* div de caja de LOGIN y REGISTER*/
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+
+}
+
+.caja__trasera div p,
+.caja__trasera div button{
+    margin-top: 30px;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid white;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer; /* hace que aparezca la manito al posar el cursor */
+    color: white;
+    outline: none;  /* saca la linea que bordea el boton al hacer clic */
+    transition: all 300ms; /* hace la animacion del hover mas natural y pausada */
+}
+
+.caja__trasera button:hover{
+    background: white; /* fondo del boton */
+    color: #46A2FD; /* texto del boton */
+}
+
+/*      FORMULARIOS     */
+
+.container__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); /* suaviza la animacion de la funcion register de JS y le agrega un efecto de rebote */
+}
+
+.container__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.container__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px; 
+    
+}
+
+.container__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;  /* agranda las caja de los input */
+    border: none;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    outline: none; /* saca el reborde al cliquear */
+}
+
+.container__login-register form button{
+    padding: 10px 40px; /* arriba y a los costados */
+    margin-top: 40px;
+    font-size: 14px;
+    border: none;
+    background: #46A2FD;
+    color: white;
+    cursor: pointer; /* aparece la manito */
+    outline: none;
+}
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+
+/* asi aparece INICIAR SESION */
+.formulario__register{
+    display: none;
+}
+
+/* haciendolo RESPONSIVE */
+
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    /* caja celeste de fondo */
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    /* de esta manera los div se pueden montar uno sobre otro. Con JS se corrige para que no quede texto sobre texto */
+    .caja__trasera div{
+        margin: 0;
+        position: absolute;
+    }
+
+    /* FORMULARIOS */
+
+    /* caja blanca deslizante*/
+    .container__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    /* caja blanca queda abajo de la celeste*/
+    .container__login-register form{
+        position: relative;
+    }
+    
+}
+
+
+
+
+
+
+
